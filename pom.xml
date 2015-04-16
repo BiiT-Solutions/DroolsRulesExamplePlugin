@@ -8,7 +8,7 @@
 	<dependencies>
 		<dependency>
 			<groupId>com.biit.plugins</groupId>
-			<artifactId>generic-plugin</artifactId>
+			<artifactId>plugin-manager</artifactId>
 			<version>0.0.1</version>
 		</dependency>
 	</dependencies>
