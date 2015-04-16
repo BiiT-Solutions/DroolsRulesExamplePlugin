@@ -3,6 +3,7 @@
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>com.biit.plugins</groupId>
 	<artifactId>drools-rules-plugin</artifactId>
+	<packaging>jar</packaging>
 	<version>0.0.1</version>
 	<name>Drools Rules Plugin</name>
 	<dependencies>
@@ -12,4 +13,23 @@
 			<version>0.0.1</version>
 		</dependency>
 	</dependencies>
+	
+	<properties>
+		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+		<maven-compiler-plugin.version>3.1</maven-compiler-plugin.version>
+	</properties>
+
+	<build>
+		<plugins>
+	<plugin>
+		<groupId>org.apache.maven.plugins</groupId>
+			<artifactId>maven-compiler-plugin</artifactId>
+			<version>${maven-compiler-plugin.version}</version>
+			<configuration>
+				<source>7</source>
+				<target>7</target>
+			</configuration>
+	</plugin>
+			</plugins>
+	</build>
 </project>
