@@ -10,6 +10,7 @@ public class DroolsPlugin extends BasePlugin {
 	// Plugin name (must be unique)
 	public static String NAME = "DroolsFunctions";
 
+	@Override
 	public String getPluginName() {
 		return NAME;
 	}
