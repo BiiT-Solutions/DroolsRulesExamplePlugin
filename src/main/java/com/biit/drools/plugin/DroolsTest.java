@@ -1,14 +1,13 @@
 package com.biit.drools.plugin;
 
-import net.xeoh.plugins.base.annotations.PluginImplementation;
+import org.pf4j.Extension;
 
 import com.biit.plugins.BasePlugin;
+import com.biit.plugins.interfaces.IPlugin;
 
-@PluginImplementation
-public class DroolsPlugin extends BasePlugin {
-
-	// Plugin name (must be unique)
-	public static String NAME = "DroolsFunctions";
+@Extension
+public class DroolsTest extends BasePlugin implements IPlugin {
+	public static final String NAME = "drools-test";
 
 	@Override
 	public String getPluginName() {
