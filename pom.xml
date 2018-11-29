@@ -14,7 +14,7 @@
 			<artifactId>plugin-manager</artifactId>
 			<version>[0.2,0.3)</version>
 			<!-- PF4J: Mandatory not include in the final jar -->
-			<scope>compile</scope>
+			<scope>provided</scope>
 		</dependency>
 	</dependencies>
 
