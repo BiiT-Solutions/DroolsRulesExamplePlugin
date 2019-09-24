@@ -1,4 +1,5 @@
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 
 	<modelVersion>4.0.0</modelVersion>
@@ -8,20 +9,11 @@
 	<version>0.1.0</version>
 	<name>Drools Rules Plugin</name>
 
-	<dependencies>
-		<dependency>
-			<groupId>com.biit</groupId>
-			<artifactId>plugin-manager</artifactId>
-			<version>[0.2,0.3)</version>
-			<!-- PF4J: Mandatory not include in the final jar -->
-			<scope>provided</scope>
-		</dependency>
-	</dependencies>
-
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		<maven-compiler-plugin.version>3.1</maven-compiler-plugin.version>
 		<maven-jar.version>2.4</maven-jar.version>
+		<plugin-manager.version>[0.2,0.3)</plugin-manager.version>
 		<!-- Plugin definition -->
 		<plugin.id>drools-test</plugin.id>
 		<plugin.class>com.biit.drools.plugin.DroolsTestPlugin</plugin.class>
@@ -29,6 +21,16 @@
 		<plugin.provider>BiiT Solutions</plugin.provider>
 		<plugin.dependencies></plugin.dependencies>
 	</properties>
+
+	<dependencies>
+		<dependency>
+			<groupId>com.biit</groupId>
+			<artifactId>plugin-manager</artifactId>
+			<version>${plugin-manager.version}</version>
+			<!-- PF4J: Mandatory not include in the final jar -->
+			<scope>provided</scope>
+		</dependency>
+	</dependencies>
 
 	<build>
 		<plugins>
