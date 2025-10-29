@@ -1,0 +1,1 @@
+A demo plugin for Drools Rules Engine. 
