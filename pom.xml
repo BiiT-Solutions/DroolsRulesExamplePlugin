@@ -4,7 +4,7 @@
 	<groupId>com.biit-solutions.drools.plugins</groupId>
 	<artifactId>drools-rules-plugin</artifactId>
 	<packaging>jar</packaging>
-	<version>0.1.1</version>
+	<version>0.1.2-SNAPSHOT</version>
 	<name>Drools Rules Plugin</name>
 
 	<parent>
@@ -44,7 +44,7 @@
 		<connection>scm:git:ssh://git@github.com/BiiT-Solutions/DroolsRulesExamplePlugin.git</connection>
 		<developerConnection>scm:git:ssh://git@github.com/BiiT-Solutions/DroolsRulesExamplePlugin.git</developerConnection>
 		<url>https://github.com/BiiT-Solutions/DroolsRulesExamplePlugin.git</url>
-		<tag>drools-rules-plugin-0.1.1</tag>
+		<tag>drools-rule-example-plugin</tag>
 	</scm>
 
 	<properties>
